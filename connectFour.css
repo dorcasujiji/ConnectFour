@@ -1,0 +1,119 @@
+body {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+}
+
+div.banner {
+  text-align: center;
+  background-image: linear-gradient(90deg, #DEF1FB, steelblue);
+  width: 100%;
+}
+
+div.page {
+  text-align: center;
+  padding: 20px;
+}
+
+p.welcome {
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid steelblue; //#000
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+div.rules {
+  float:left;
+  text-align: left;
+  max-width: 450px;
+}
+
+div.game {
+  float:left;
+  padding-left: 10px;
+}
+
+div.gameInfo {
+  float:left;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.diskPlayers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p.gameStatus {
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  align-self: center;
+  font-style: italic;
+  font-size: 140%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  float: left;
+  border: 5px solid lightgrey;
+}
+
+div#grid {
+  min-width: 500px;
+}
+
+/* disks */
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+} .red {
+  background-color: red;
+} .blue {
+  background-color: steelblue;
+}
+
+.button {
+  background-color: #DEF1FB;
+  border-color: steelblue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* page mask behind pop-up */
+div#pageMask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+div#popUp {
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    background-color: rgba(255,255,255,.2);
+    border: 4px solid steelblue;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+}

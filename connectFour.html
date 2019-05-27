@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="connectFour.css">
+    <title>Connect Four</title>
+  </head>
+
+  <body>
+    <div id="pageMask"></div>
+    <!-- pop-up -->
+    <div id = "popUp">
+        <img id= "winnerImage" src="lose.gif" alt="You lose!">
+        <button id = "closePopUp"> Ok </button>
+    </div>
+    <!-- pop-up -->
+
+    <div class="banner">
+      <p class="welcome">Welcome to Connect Four</p>
+    </div>
+
+    <p class="gameStatus" id="gameStatus"></p>
+
+    <div class="page">
+      <div class="rules">
+        <p><b>Rules:</b></p>
+        <ul>
+          <li>The goal is to connect four disks of same color diagonally, vertically or horizontally.</li><br>
+          <li>Click the Start Button to begin/restart the game.</li><br>
+          <li>Left click on the column you wish to drop your disk.</li>
+        </ul>
+      </div>
+
+      <div class="game">
+
+        <div id="grid">
+          <table id="0">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="1">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="2">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="3">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="4">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="5">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+
+          <table id="6">
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+            <tr>  <td class="dot"></td>  </tr>
+          </table>
+        </div>
+
+        <button class="button" id="start">START GAME</button>
+      </div>
+
+
+      <div class="gameInfo">
+        <div class="diskPlayers">
+          <div class="dot red"></div>
+          <br>
+          <div class="dot blue"></div>
+        </div>
+        <div class="players">
+          <br>
+          <p>Computer</p>
+          <br>
+          <p>Player (You)</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="cell.js"></script>
+    <script type="text/javascript" src="grid.js"></script>
+    <script type="text/javascript" src="connectFour.js"></script>
+  </body>
+
+
+</html>
