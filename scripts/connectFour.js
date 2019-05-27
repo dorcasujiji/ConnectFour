@@ -29,7 +29,7 @@ function gameWon() {
     gameInPlay = false; // stop game play
 
     var image;
-    (color == "steelblue") ? image = "win.gif": image = "lose.gif";
+    (color == "steelblue") ? image = "images/win.gif": image = "images/lose.gif";
 
     document.getElementById("winnerImage").src = image;
     document.getElementById("popUp").style.display = "flex";
